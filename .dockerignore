@@ -1,0 +1,8 @@
+node_modules
+.dockerignore
+#.next
+Dockerfile
+.idea
+./data
+**/.DS_Store
+.env

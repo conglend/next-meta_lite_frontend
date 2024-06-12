@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  nextjs-app:
+    image: ${NEXT_PUBLIC_APP_COMPOSE_IMAGE_NAME}
+    container_name: meta_lite_frontend
+    environment:
+      NEXT_PUBLIC_APP_BASE_URL:
+      NEXT_PUBLIC_APP_HOST_PORT:
+    ports:
+      - "${NEXT_PUBLIC_APP_HOST_PORT}:3000"
